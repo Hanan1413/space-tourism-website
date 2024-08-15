@@ -1,0 +1,74 @@
+
+
+
+
+
+.mobile{
+    padding: 24px;
+    background-color: #0B0D17;
+
+}
+
+.bg {
+    background-image: url(/src/assets/home/background-home-mobile.jpg);
+    background-size: cover;
+    background-position: center  ;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    /* object-fit: cover; */
+    position: relative;
+  }
+
+
+  .container{
+    height: 724px;
+    text-align: center;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+
+  .content{
+    width: 327px;
+    height: 294px;
+  }
+
+  .space{
+    font-size: 80px;
+    font-weight: normal;
+
+  }
+
+  .intro{
+    font-size: 15px;
+
+  }
+
+  .explore{
+    width: 144px;
+    height: 144px;
+    background: #fff;
+    border-radius: 999px;
+    color:#0B0D17;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+  }
+
+  .expContainer{
+    height: 382px;
+    width:327px ;
+  }
+  
+  
