@@ -1,16 +1,17 @@
+import DesktopNav from "../../components/desktop-nav/DesktopNav";
 import MobileMenu from "../../components/mobileMenu/MobileMenu";
 import styles from "./Home.module.css";
 const HomePage = () => {
   return (
     <>
-    <MobileMenu />
+
 
     <div className={styles.bg}>
       </div>
 
-      <div className={styles.container}>
+      <div className={`container  ${styles.container} ${styles.hero}`}>
         <div className={styles.content}>
-          <p style={{ fontSize: "15px" }}>SO, YOU WANT TO TRAVEL TO </p>
+          <p className={styles.headline}>SO, YOU WANT TO TRAVEL TO </p>
           <h1 className={styles.space}>SPACE</h1>
           <p className={styles.intro}>
             Let’s face it; if you want to go to space, you might as well
@@ -25,6 +26,7 @@ const HomePage = () => {
             Explore</p></div>
       </div>
     </div>
+    
     </>
   );
 };

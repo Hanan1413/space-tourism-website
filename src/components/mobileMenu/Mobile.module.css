@@ -1,13 +1,16 @@
 .header {
     /* width: 375px; */
     height: 88px;
-    background-color: #0B0D17;
     display: flex;
-    position: relative;
     justify-content: space-between;
     align-items: center;
     padding: 24px;
     z-index: 10;
+
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+
 }
 
 .hamburgerIcon img {
@@ -41,8 +44,13 @@ text-align: right;
 padding-left: 32px;
 padding-top: 32px;
 padding-bottom: 32px;
+margin: 0 auto;
 
 
+}
+
+.closeMenu img{
+    width: 19px;
 }
 nav.active {
     display: flex;
@@ -66,4 +74,12 @@ nav li {
 nav li span {
     margin-right: 10px;
     color: #888;
+}
+
+
+@media (min-width:768px) {
+    
+    .header{
+        display: none;
+    }
 }

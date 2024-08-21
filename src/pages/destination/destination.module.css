@@ -1,0 +1,183 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: var(--clr-white);
+    background-image: url('../../assets/destination/background-destination-mobile.jpg'); /* Add your background image */
+    background-size: cover; /* Ensure the image covers the entire page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; 
+    width: 100%;
+    padding:24px;
+    position: relative;
+  }
+  
+  /* Moon name  */
+
+  .moons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:32px;
+    padding-bottom: 24px;
+    cursor: pointer;
+    height: 50px;
+  }
+ .hoverTab.activeTab:hover{
+    border-bottom: 1px solid var(--clr-white);
+  }
+  .leftColumn {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .headline {
+    padding-bottom: 48px;
+    position: absolute;
+     padding: 132px 47px;
+    z-index: 100;
+
+  }
+  
+  .leftColumn img {
+    width: 150px;
+
+  }
+
+  .leftColumn h1{
+    align-self: center;
+    padding-bottom: 24px;
+}
+  
+  .rightColumn {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .rightColumn h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .rightColumn h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 24px;
+    line-height: 180%;
+  }
+  
+  .rightColumn hr {
+    margin: 20px 0;
+    width: 100%;
+  }
+  
+  .details {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .details div {
+    text-align: left;
+  }
+  
+  .details h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .details p {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Capitalize the second letter of each word */
+  .capitalizeSecondLetter {
+    text-transform: lowercase; /* Start with lowercase */
+  }
+  
+  .capitalizeSecondLetter::first-letter {
+    text-transform: capitalize; /* Capitalize the first letter */
+  }
+  
+  .capitalizeSecondLetter span:nth-child(2) {
+    text-transform: capitalize; /* Capitalize the second letter */
+  }
+  
+@media (min-width:768px) {
+
+    .container{
+        background-image: url('../../assets/destination/background-destination-tablet.jpg'); /* Add your background image */
+        gap:40px;
+        padding-top: 120px;
+        
+
+    }
+  
+    .leftColumn img {
+      width: 480px;
+     
+
+}
+
+}
+  @media (min-width:1024px) {
+    .container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../../assets/destination/background-destination-desktop.jpg'); /* Add your background image */
+        /* padding:48px 165px ; */
+        /* height: 100vh; */
+
+
+    }
+
+    .details{
+        flex-direction: row;
+    }
+    
+    .rightColumn, .leftColumn{
+        padding: 126px 47px;
+        width: 50%;
+        padding-top: 50px;
+
+    }
+    .leftColumn img {
+      width: 480px;
+      padding-top: 63px; 
+
+     
+}
+    /* .moonImg{
+        width:100%;
+
+    } */
+   
+    .leftColumn, .rightColumn{
+        text-align: left;
+   
+       
+       
+    }
+
+    .leftColumn h1{
+        align-self: flex-start;
+    }
+    .moons{
+      text-align: left;
+      justify-content: start;
+    }
+    
+  }

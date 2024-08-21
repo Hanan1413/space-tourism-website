@@ -1,0 +1,86 @@
+
+
+
+
+
+
+/* Navbar.css */
+
+/* DesktopNav.module.css */
+@media (min-width: 768px) {
+    
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    color: var(--clr-white);
+    height: 96px;
+
+  }
+  
+.navBarLogo{
+    padding-left: 40px;
+
+}
+  .navBarLogo a {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navBarLinks {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 8px;
+    justify-content: space-around;
+    width: 640px;
+    height: 96px;
+    text-align: left;
+
+    background: #ffffff1f; /* Semi-transparent background */
+
+
+}
+
+
+  
+  .navBarLinks li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .navBarLinks li a:hover {
+    color: #ddd;
+  }
+    
+}
+
+@media (min-width:1024px) {
+    .navBar{
+        padding-top: 40px;
+
+    }
+
+    hr{
+        width: 560px;
+        height: 1px;
+        background-color: #979797;
+        border: none;
+        margin-left: 64px ;
+    }
+}
+@media (max-width:500px) {
+    .navBar{
+    display: none;
+}
+}
