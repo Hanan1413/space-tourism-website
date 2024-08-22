@@ -7,8 +7,12 @@ const DestinationItem = ({ selectedDestination, destinations, setSelectedDestina
 
 
   return (
+    <>
+
     <div className={styles.container}>
+     </div>
       {/* First Column */}
+      <div className={styles.columns}>
       <div className={styles.leftColumn}>
         <h1 className={styles.capitalizeSecondLetter}>
           01 PICK YOUR DESTINATION
@@ -47,7 +51,9 @@ const DestinationItem = ({ selectedDestination, destinations, setSelectedDestina
           </div>
         </div>
       </div>
-    </div>
+      </div>
+   
+      </>
   );
 };
 

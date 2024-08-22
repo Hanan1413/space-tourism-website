@@ -1,24 +1,29 @@
-import  styles from './Desktop.module.css'
+import  styles from './Desktop.module.css';
+import { Link } from 'react-router-dom';
+
+
+
+
 const DesktopNav = () => {
  
   return (
-    <div className={` ${styles.navBar}`}>
+    <div className={styles.navBar}>
       <div className={styles.navBarLogo}>
         <img src="/src/assets/shared/logo.svg" alt="" />
       </div>
       <hr />
       <ul className={styles.navBarLinks}>
         <li>
-          <a href="/"> <span className='home-ink'>00</span>HOME</a>
+          <Link to='/'> <span className='home-ink'>00</span>HOME</Link>
         </li>
         <li>
-          <a href="/about"> <span className='home-ink'>01</span>DESTANTION </a>
+          <Link to='/destination'> <span className='home-ink'>01</span>DESTANTION </Link>
         </li>
         <li>
-          <a href="/services"> <span className='home-ink'>02</span>CREW</a>
+          <Link to="/crew"> <span className='home-ink'>02</span>CREW</Link>
         </li>
         <li>
-          <a href="/contact"> <span className='home-ink'>03</span>TECHNOLOGY</a>
+          <a href="/technology"> <span className='home-ink'>03</span>TECHNOLOGY</a>
         </li>
       </ul>
     </div>
