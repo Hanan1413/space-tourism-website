@@ -11,8 +11,8 @@ const SingleCrew = ({crew}) => {
        
     </div>
     <div className={styles.mainContent}>
-        <h1>{crew.role}</h1>
-        <p>{crew.bio}</p>
+        <h1>{role}</h1>
+        <p>{bio}</p>
     </div>
     </>
   )
