@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './crew.module.css';
 
-const SingleCrew = ({pagination, handleClick, crew, setActivePaginationIndex}) => {
-    const {name, role, bio, id, images} = crew;
+const SingleCrew = ({ crew, setActivePaginationIndex}) => {
+    const {name, role, bio, images} = crew;
     const{png} = images;
 
 
@@ -22,11 +22,11 @@ const SingleCrew = ({pagination, handleClick, crew, setActivePaginationIndex}) =
         <p>{bio}</p>
 
                   {/* Display pagination or navigation buttons */}
-                  <div className={styles.paginations}>
+          <div className={styles.paginations}>
           <div className={styles.pagination} onClick={() => setActivePaginationIndex(0)}></div>
           <div className={styles.pagination} onClick={() => setActivePaginationIndex(1)}></div>
-          <div className={styles.pagination}onClick={() => setActivePaginationIndex(2)}></div>
-          <div className={styles.pagination}onClick={() => setActivePaginationIndex(3)}></div>
+          <div className={styles.pagination} onClick={() => setActivePaginationIndex(2)}></div>
+          <div className={styles.pagination} onClick={() => setActivePaginationIndex(3)}></div>
 
 
       </div>

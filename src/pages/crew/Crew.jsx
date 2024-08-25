@@ -16,7 +16,7 @@ const Crew = ({crew}) => {
     <div className={styles.mainPage}>
             {/* Pass the current crew member based on the activeIndex */}
 
-      <SingleCrew crew={crew[activepaginationIndex]} handleClick={handleClick} setActivePaginationIndex={setActivePaginationIndex} activepaginationIndex={activepaginationIndex}/>
+      <SingleCrew crew={crew[activepaginationIndex]}  setActivePaginationIndex={setActivePaginationIndex} />
 
   
     
