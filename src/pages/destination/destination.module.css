@@ -137,8 +137,8 @@
 
   .columns {
     flex-direction: row;
-    padding: 47px 126px 0  126px;
-    top:48px
+    padding: 47px 126px 0 126px;
+    top: 48px;
   }
 
   .details {
@@ -151,13 +151,9 @@
     padding-top: 50px;
   }
   .leftColumn img {
-    width: 360px;
-    padding-top: 63px;
+    padding-top: 30px;
+    width: 310px;
   }
-  /* .moonImg{
-        width:100%;
-
-    } */
 
   .leftColumn,
   .rightColumn {

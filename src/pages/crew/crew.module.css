@@ -1,36 +1,123 @@
 .showcase {
-    background-image: url('../../assets/crew/background-crew-mobile.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    overflow-y: hidden;
-    z-index: -1;
+  background-image: url("../../assets/crew/background-crew-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow-y: hidden;
+  z-index: -1;
 }
 
+.headline {
+  margin-bottom: 50px;
+  font-family: "Bellefair", serif;
+}
 .mainContent {
-    /* display: flex; */
-    position: absolute;
-    z-index: 100;
-    top: 50%;
-    left: 0px;
-    right: 0px;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    color: blue; /* Ensure text color contrasts with background */
-    text-align: center; /* Center text alignment */
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 100;
+  top: 15%;
+  left: 0px;
+  right: 0px;
+  padding: 24px;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  color: var(--clr-light); /* Ensure text color contrasts with background */
+  text-align: center; /* Center text alignment */
+  font-family: var(--b);
+  z-index: -1;
+}
+
+
+
+.mainContent h1 {
+  position: none;
+}
+.mainContent h1,
+h3 {
+  font-family: "Bellefair";
+}
+.mainContent p {
+  margin-top: 24px;
+  line-height: 22px;
+}
+
+.paginations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  /* position: absolute; */
+  /* top: 80%;
+  left: 20%; */
+}
+.pagination {
+  color: var(--clr-white);
+  background-color: white;
+  height: 12px;
+  width: 12px;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.pagination.active {
+  background-color: var(--clr-white);
+}
+
+.crew {
+  width: 271px;
 }
 
 @media (min-width: 768px) {
-    .showcase {
-        background-image: url('../../assets/crew/background-crew-tablet.jpg');
-    }
+  .showcase {
+    background-image: url("../../assets/crew/background-crew-tablet.jpg");
+  }
 }
 
 @media (min-width: 1024px) {
-    .showcase {
-        background-image: url('../../assets/crew/background-crew-desktop.jpg');
-    }
+  .showcase {
+    background-image: url("../../assets/crew/background-crew-desktop.jpg");
+    
+  }
+  .crew{
+    width: 350px;
+    object-fit: contain;
+  }
+
+  .headline {
+    margin-bottom: 100px;
+  }
+  .mainContent {
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+    padding: 48px 165px;
+    gap: 20px;
+  }
+  .leftSide {
+    position: relative;
+    flex: 1;
+    text-align: left;
+  }
+  .rightSide {
+    flex: 1;
+    /* text-align: left; */
+  }
+
+  .paginations {
+    justify-content: start;
+  }
+
+  /* .mainContent h1{
+        position: absolute;
+        left: 88px;
+    } */
 }
