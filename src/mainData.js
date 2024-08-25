@@ -1,16 +1,14 @@
-
-
-
-import Mars from './assets/destination/image-mars.png'
-import Moon from './assets/destination/image-moon.png';
-import  Europa  from "./assets/destination/image-europa.png";
+import Mars from "./assets/destination/image-mars.png";
+import Moon from "./assets/destination/image-moon.png";
+import Europa from "./assets/destination/image-europa.png";
 import Titan from "./assets/destination/image-titan.png";
-import douglas from "./assets/crew/image-douglas-hurley.png"
-import  mark from "./assets/crew/image-mark-shuttleworth.png"
-import victor from "./assets/crew/image-victor-glover.png"
+import douglas from "./assets/crew/image-douglas-hurley.png";
+import mark from "./assets/crew/image-mark-shuttleworth.png";
+import victor from "./assets/crew/image-victor-glover.png";
 import ansari from "./assets/crew/image-anousheh-ansari.png";
-
-
+import launch from "./assets/technology/image-launch-vehicle-portrait.jpg";
+import spaceport from "./assets/technology/image-spaceport-portrait.jpg";
+import capsule from "./assets/technology/image-space-capsule-portrait.jpg";
 
 export const destinations = [
   {
@@ -65,7 +63,7 @@ export const destinations = [
 
 export const crew = [
   {
-    id:1,
+    id: 1,
     name: "Douglas Hurley",
     images: {
       png: douglas,
@@ -75,7 +73,7 @@ export const crew = [
     bio: "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.",
   },
   {
-    id:2,
+    id: 2,
     name: "Mark Shuttleworth",
     images: {
       png: mark,
@@ -85,17 +83,17 @@ export const crew = [
     bio: "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.",
   },
   {
-    id:3,
+    id: 3,
     name: "Victor Glover",
     images: {
-      png: victor ,
+      png: victor,
       webp: "./assets/crew/image-victor-glover.webp",
     },
     role: "Pilot",
     bio: "Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer.",
   },
   {
-    id:4,
+    id: 4,
     name: "Anousheh Ansari",
     images: {
       png: ansari,
@@ -106,31 +104,28 @@ export const crew = [
   },
 ];
 
-export const technology = [
+export const technologyData = [
   {
+    id:1,
     name: "Launch vehicle",
-    images: {
-      portrait: "./assets/technology/image-launch-vehicle-portrait.jpg",
-      landscape: "./assets/technology/image-launch-vehicle-landscape.jpg",
-    },
+    images: launch,
+    
     description:
       "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!",
   },
   {
+    id:2,
     name: "Spaceport",
-    images: {
-      portrait: "./assets/technology/image-spaceport-portrait.jpg",
-      landscape: "./assets/technology/image-spaceport-landscape.jpg",
-    },
+    images: spaceport,
+
     description:
       "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.",
   },
   {
+    id:3,
     name: "Space capsule",
-    images: {
-      portrait: "./assets/technology/image-space-capsule-portrait.jpg",
-      landscape: "./assets/technology/image-space-capsule-landscape.jpg",
-    },
+    images: capsule,
+    
     description:
       "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.",
   },

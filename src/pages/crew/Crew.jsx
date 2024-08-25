@@ -1,28 +1,20 @@
-import React, { useState } from 'react'
-import styles from './crew.module.css';
- import SingleCrew from './SingleCrew'
+import React, { useState } from "react";
+import styles from "./crew.module.css";
+import SingleCrew from "./SingleCrew";
 
-
-const Crew = ({crew}) => {
-  console.log(crew)
-  const[activepaginationIndex, setActivePaginationIndex] = useState(0)
-
-  const handleClick = (id) =>{
-    setActivePaginationIndex(index);
-  }
-  // console.log(isCrew)
+const Crew = ({ crew }) => {
+  const [activepaginationIndex, setActivePaginationIndex] = useState(0);
 
   return (
     <div className={styles.mainPage}>
-            {/* Pass the current crew member based on the activeIndex */}
+      {/* Pass the current crew member based on the activeIndex */}
 
-      <SingleCrew crew={crew[activepaginationIndex]}  setActivePaginationIndex={setActivePaginationIndex} />
+      <SingleCrew
+        crew={crew[activepaginationIndex]}
+        setActivePaginationIndex={setActivePaginationIndex}
+      />
+    </div>
+  );
+};
 
-  
-    
-          </div>
-  )
-}
-
-
-export default Crew
+export default Crew;

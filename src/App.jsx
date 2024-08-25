@@ -6,8 +6,10 @@ import DesktopNav from "./components/desktop-nav/DesktopNav";
 import Crew from "./pages/crew/Crew";
 import { destinations } from "./mainData";
 import {crew} from "./mainData"
+import { technologyData } from "./mainData";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Technology from "./pages/technology/Technology";
 
 // Layout Component
 function AppLayout({ children }) {
@@ -39,6 +41,9 @@ function App() {
 
 
           {/* <Route  path='/destination' element={  <Destination  destinations={destinations}/> }  /> */}
+          <Route path="/technology" 
+          element={<Technology  technology={technologyData}  />} 
+          />
         </Routes>
       </AppLayout>
     </Router>
