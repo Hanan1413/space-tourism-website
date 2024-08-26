@@ -20,7 +20,6 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    z-index: 100;
     top: 15%;
     left: 0px;
     right: 0px;
@@ -29,19 +28,21 @@
     color: var(--clr-light); 
     text-align: center; 
     font-family: var(--b);
-    z-index: -1
     }
 
     .image{
         width: 100%;
-        margin-bottom: 32px
+        margin-bottom: 32px;
     }
 
      .techImg{
       height: 250px;
       object-fit: cover;
+   
 
      }
+   
+     
     .headline{
       margin-bottom: 88px;
       position: absolute;
@@ -72,6 +73,9 @@
   font-size: 16px;
   cursor: pointer;
   color: var(--clr-light);
+  pointer-events: auto; 
+  transition: background-color 0.5s ease, color 0.3s ease, border-color 0.3s ease;
+
   }
 
   .active{
