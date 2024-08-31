@@ -1,10 +1,8 @@
 import styles from "./technology.module.css";
 
 const TechnologyItem = ({ technology, setSelectedTechnology, seletedtechnology}) => {
-  console.log(technology);
-  console.log(seletedtechnology)
 
-  const { name, description, images, id } = seletedtechnology;
+  const { name, description, images } = seletedtechnology;
 
   return (
     <div>

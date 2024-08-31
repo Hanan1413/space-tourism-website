@@ -12,6 +12,7 @@ const Crew = ({ crew }) => {
       <SingleCrew
         crew={crew[activepaginationIndex]}
         setActivePaginationIndex={setActivePaginationIndex}
+        activepaginationIndex={activepaginationIndex}
       />
     </div>
   );

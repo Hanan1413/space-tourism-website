@@ -114,7 +114,7 @@
 
         width: 80px;
         height: 80px;
-        font-size: 24px; /* Adjust font size for desktop */
+        font-size: 24px;
       }
       .content{
         flex-direction: row-reverse;
